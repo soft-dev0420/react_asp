@@ -1,8 +1,20 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
+import MainPage from './MainPage';
 
-test('renders learn react link', () => {
+test('renders DexMachine App title', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const titleElement = screen.getByText(/DexMachine App/i);
+  expect(titleElement).toBeInTheDocument();
+});
+
+// Mock react-router-dom's useNavigate
+jest.mock('react-router-dom', () => ({
+  ...jest.requireActual('react-router-dom'),
+  useNavigate: () => jest.fn(),
+}));
+
+test('renders DexMachine welcome', () => {
+  render(<MainPage />);
+  expect(screen.getByText(/Welcome to DexMachine/i)).toBeInTheDocument();
 });
