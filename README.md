@@ -67,7 +67,6 @@ The app expects a backend API running on `http://localhost:5000` with the follow
 
 #### Authentication
 - `POST /login` - User login (returns JWT token)
-- `GET /user/profile` - Get user profile (requires authentication)
 
 #### Machine Operations
 - `POST /vdi-dex?machine=A` - Send data to Machine A

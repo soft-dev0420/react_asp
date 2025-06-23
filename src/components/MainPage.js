@@ -201,7 +201,7 @@ const MainPage = () => {
           <Nav className="ms-auto">
             <NavDropdown
               title={
-                <span>
+                <span style={{ color: 'black' }}>
                   <FaUserCircle className="me-2" />
                   {userData?.username || 'User'}
                 </span>
@@ -335,7 +335,7 @@ const MainPage = () => {
                 <Row className="mb-4">
                   <Col>
                     <Button
-                      variant="outline-info"
+                      variant="primary"
                       size="lg"
                       className="action-btn w-100"
                       onClick={testConnection}
