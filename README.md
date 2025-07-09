@@ -68,14 +68,14 @@ A modern React application for managing DEX (Data Exchange) machine operations w
 Use WinRAR or any decompression tool to extract DexApi.rar.
 
 #### Backend Setup(.NET API)
-##### Open DexApi in Visual Studio 2022
-##### Restore dependencies
+- Open DexApi in Visual Studio 2022
+- Restore dependencies
 dotnet restore
 
-##### Build the project
+- Build the project
 dotnet build
 
-##### Run the API
+- Run the API
 dotnet run
 
 The app expects a backend API running on `http://localhost:5000` with the following endpoints:
