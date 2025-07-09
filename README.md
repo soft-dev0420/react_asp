@@ -69,14 +69,20 @@ Use WinRAR or any decompression tool to extract DexApi.rar.
 
 #### Backend Setup(.NET API)
 - Open DexApi in Visual Studio 2022
-- Restore dependencies:
+- Restore dependencies
+```bash
 dotnet restore
+```
 
-- Build the project:
+- Build the project
+```bash
 dotnet build
+```
 
-- Run the API:
+- Run the API
+```bash
 dotnet run
+```
 
 The app expects a backend API running on `http://localhost:5000` with the following endpoints:
 
